@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FHICT_Companion_App_Group1</string>
+    <string name="showresults">ShowResults</string>
+    <string name="textViewNewsAuthor">TextViewNewsAuthor</string>
+    <string name="TextViewNewsTitle">TextViewNewsTitle</string>
+    <string name="textViewNewsRowPosition">TextViewNewsRowPosition</string>
+    <string name="news">News</string>
+    <string name="imageDescriptionOfFontysBuilding">An inside image of the a Fontys building</string>
+    <string name="textViewDetailNewsDescription">textViewDetailNewsDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription</string>
+    <string name="news_details">News Details</string>
+    <string name="my_Profile">Profile</string>
+    <string name="all_People">People</string>
+    <string name="myProfile_ID">ID: 12222 </string>
+    <string name="myProfile_name">Name Here</string>
+    <string name="myProfile_email">Email: aloha@gmail.com </string>
+    <string name="myProfile_telephone">Telephone: 123214214 </string>
+    <string name="myProfile_office">Office: </string>
+    <string name="myProfile_content">abcdgdagjdagkjlkghajhjgahsjkdllkdsgajhdsahglj;gdaj;sjgasjkjkl</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="courseNameHolder">ANDR1</string>
+    <string name="courseDetailsHolder">R10_2.41_T BooP02</string>
+    <string name="courseTimeHolder">15:00 - 16:00</string>
+    <string name="current_week">Current Week</string>
+    <string name="schedule">Schedule</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="teachers">Teachers</string>
+    <string name="profile">Profile</string>
+    <string name="all_people_header">All teachers</string>
+    <string name="textviewpublisheddate">textViewPublishedDate</string>
+    <string name="courseDate">2021-10-11</string>
+
+</resources>
