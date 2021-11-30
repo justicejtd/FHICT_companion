@@ -91,11 +91,6 @@ class FHICTService(private val token: Token) {
         for (i in 0 until 10) {
             val innerJsonObject: String = jsonArray.get(i).toString()
             val info = Gson().fromJson(innerJsonObject, People::class.java)
-
-//            val imageInputStream = URL(info.photo).openStream()
-//            val bitmap = BitmapFactory.decodeStream(imageInputStream)
-//            info.setBitmap(bitmap)
-
             people.add(info)
         }
         return people
@@ -116,12 +111,7 @@ class FHICTService(private val token: Token) {
         val scanner = Scanner(inputStream)
         val jsonString = scanner.useDelimiter("\\Z").next()
         val jsonObject = JSONObject(jsonString)
-
         val jsonObjectToString: String = jsonObject.toString()
-
-//        val imageInputStream = URL(info.photo).openStream()
-//        val bitmap = BitmapFactory.decodeStream(imageInputStream)
-//        info.setBitmap(bitmap)
 
         return Gson().fromJson(jsonObjectToString, People::class.java)
     }
