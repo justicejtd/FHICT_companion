@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myProfilePage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/myProfilePage"
-    tools:context=".ProfileFragment">
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/backgroundProfile"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0.4"
-        android:background="@drawable/background"
+        android:background="@color/purple_200"
         android:gravity="center_horizontal"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profilePicture"
+        <agency.tango.android.avatarview.views.AvatarView
+            android:id="@+id/avatarView"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="30dp"
-            android:src="@drawable/meteor" />
+            app:av_border_color="@android:color/white"
+            app:av_border_width="4dp"
+            app:av_text_size_percentage="35" />
 
         <TextView
             android:id="@+id/myProfileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
             android:text="@string/myProfile_name"
             android:textSize="28sp">
 
@@ -40,16 +44,19 @@
         android:id="@+id/detailsProfile"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backgroundProfile">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/profile" />
+            android:contentDescription="@string/phone_icon"
+            android:src="@drawable/ic_baseline_phone_24" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,16 +80,19 @@
         android:id="@+id/detailsProfile1"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginTop="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:orientation="horizontal"
-        android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundProfile">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsProfile">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/email" />
+            android:contentDescription="@string/email_icon"
+            android:src="@drawable/ic_baseline_email_24" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:text="@string/myProfile_email"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -105,16 +115,22 @@
         android:id="@+id/detailsProfile2"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
         android:orientation="horizontal"
-        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundProfile">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsProfile1"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/department"/>
+            android:contentDescription="@string/department_image"
+            android:src="@drawable/department" />
 
         <LinearLayout
             android:layout_width="match_parent"
