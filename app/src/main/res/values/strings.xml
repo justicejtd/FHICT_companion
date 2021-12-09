@@ -29,6 +29,14 @@
     <string name="all_people_header">All teachers</string>
     <string name="textviewpublisheddate">textViewPublishedDate</string>
     <string name="courseDate">2021-10-11</string>
-    <string name="email">Email:</string>
+    <string name="email">Email: </string>
+    <string name="stream">Stream: </string>
+    <string name="student_number">Student number: </string>
+    <string name="phone_icon">phone icon</string>
+    <string name="email_icon">email icon</string>
+    <string name="department_image">department image</string>
+    <string name="profile_image">profile image</string>
+    <string name="main_text">main text</string>
+    <string name="sub_text">sub text</string>
 
 </resources>
