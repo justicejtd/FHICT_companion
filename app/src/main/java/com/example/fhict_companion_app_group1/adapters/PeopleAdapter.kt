@@ -1,10 +1,11 @@
 package com.example.fhict_companion_app_group1.adapters
 
+import agency.tango.android.avatarview.views.AvatarView
+import agency.tango.android.avatarviewglide.GlideLoader
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.fhict_companion_app_group1.R
@@ -30,10 +31,12 @@ class PeopleAdapter (val context: Context?, private val people:ArrayList<People>
         val view: View =
             convertView ?: layoutInflater.inflate(R.layout.list_people_details, parent, false)
 
-        view.findViewById<ImageView>(R.id.image).setImageBitmap(people[position].getBitmap())
         view.findViewById<TextView>(R.id.people_name).text = people[position].displayName
         view.findViewById<TextView>(R.id.people_email).text = context?.getString(R.string.email).plus(people[position].mail)
         view.findViewById<TextView>(R.id.people_office).text = people[position].office
+        val avatarView = view.findViewById(R.id.avatarView) as AvatarView
+        val imageLoader = GlideLoader()
+        imageLoader.loadImage(avatarView, "http:/example.com/user/someUserAvatar.png", people[position].displayName)
 
         return view
     }
