@@ -9,8 +9,6 @@ import com.example.fhict_companion_app_group1.fragments.TokenFragment.TokenFragm
 
 class LoginActivity : AppCompatActivity(), TokenFragment.OnFragmentInteractionListener {
 
-    //implements TokenFragment for onFragmentInteraction func
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)

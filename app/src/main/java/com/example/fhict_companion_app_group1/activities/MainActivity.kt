@@ -28,17 +28,14 @@ class MainActivity : AppCompatActivity() {
         val navController = host.navController
 
         setupBottomNavMenu(navController)
-        Log.d("Debug", "onCreate")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("Debug", "onResume")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d("Debug", "onStart")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
