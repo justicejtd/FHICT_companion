@@ -20,15 +20,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.PeopleDetailsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activities.AllPeopleActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activities.MyProfileActivity"
-            android:exported="true" />
-        <activity
             android:name=".activities.NewsDetailsActivity"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
